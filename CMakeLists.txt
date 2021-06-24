@@ -56,8 +56,8 @@ find_package(catkin REQUIRED COMPONENTS
    ObjectStatusList.msg
    VehicleSpecIndex.msg
    VehicleSpec.msg
-   NPCCollision.msg
-   NPCCollisionData.msg
+   VehicleCollision.msg
+   VehicleCollisionData.msg
  )
 
  add_service_files(
