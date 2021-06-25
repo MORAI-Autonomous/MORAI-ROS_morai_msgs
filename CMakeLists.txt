@@ -58,6 +58,8 @@ find_package(catkin REQUIRED COMPONENTS
    VehicleSpec.msg
    VehicleCollision.msg
    VehicleCollisionData.msg
+   NpcGhostCmd.msg
+   NpcGhostInfo.msg
  )
 
  add_service_files(
