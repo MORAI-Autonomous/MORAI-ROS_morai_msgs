@@ -4,33 +4,18 @@ float64 ego_acc
 float64 ego_brake
 float64 ego_steer
 
-float64 ego_orientation_x
-float64 ego_orientation_y
-float64 ego_orientation_z
-float64 ego_orientation_w
+geometry_msgs/Quaternion orientation
 
-float64 ego_linearAcceleration_x
-float64 ego_linearAcceleration_y
-float64 ego_linearAcceleration_z
+geometry_msgs/Vector3 linear_acceleration
 
-float64 ego_AngularVelocity_x
-float64 ego_AngularVelocity_y
-float64 ego_AngularVelocity_z
+geometry_msgs/Vector3 angular_velocity
 
-int32 num_of_objects
-int16[] object_type
+int32 num_of_npcs
+int32 num_of_pedestrian
+int32 num_of_obstacle
 
-int32[] object_id
+ObjectStatus[] npc_list 
 
-float64[] pose_x
-float64[] pose_y
-float64[] pose_z
+ObjectStatus[] pedestrian_list
 
-float64[] heading
-
-float64[] size_x
-float64[] size_y
-float64[] size_z
-
-float64[] velocity
-
+ObjectStatus[] obstacle_list 

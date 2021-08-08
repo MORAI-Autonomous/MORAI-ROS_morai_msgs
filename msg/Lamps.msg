@@ -1,4 +1,4 @@
 Header header
 
-uint8 turnSignal
-uint8 emergencySignal
+int8 turnSignal
+int8 emergencySignal

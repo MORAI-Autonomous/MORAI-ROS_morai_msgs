@@ -12,18 +12,12 @@ find_package(catkin REQUIRED COMPONENTS
    DIRECTORY msg
    FILES
    CtrlCmd.msg
-   EgoVehiclePosition.msg
    EgoVehicleStatus.msg
-   EgoVehicleVelocity.msg
-   FactoryAddress.msg
    GPSMessage.msg
-   GuideData.msg
-   ObjectInfo.msg
-   ScenarioLoad.msg
-   SVehicleStatus.msg
+   GhostMessage.msg
+   ObjectStatusList.msg
+   ObjectStatus.msg
    TrafficLight.msg
-   VehicleCommand.msg
-   VelPlot.msg
    ERP42Info.msg
    GetTrafficLightStatus.msg
    SetTrafficLight.msg
@@ -33,45 +27,42 @@ find_package(catkin REQUIRED COMPONENTS
    MultiEgoSetting.msg
    IntscnTL.msg
    SensorPosControl.msg
-   GenericVehicleControl.msg
-   SaveSensorData.msg
-   MoraiTimestamp.msg
-   GhostMessage.msg
-   Lamps.msg
-   MoraiTLInfo.msg
    MoraiSimProcHandle.msg
    MoraiSimProcStatus.msg
    MoraiSrvResponse.msg
+   ScenarioLoad.msg
    MoraiTLIndex.msg
-   RadarTrack.msg
-   RadarTracks.msg
-   Mgeo.msg
-   MgeoLink.msg
-   MgeoLinkList.msg
-   MgeoNode.msg
-   MgeoNodeList.msg
-   EventInfo.msg
+   MoraiTLInfo.msg
+   SaveSensorData.msg
    ReplayInfo.msg
-   ObjectStatus.msg
-   ObjectStatusList.msg
-   VehicleSpecIndex.msg
+   EventInfo.msg
+   Lamps.msg
    VehicleSpec.msg
-   VehicleCollision.msg
-   VehicleCollisionData.msg
+   VehicleSpecIndex.msg
    NpcGhostCmd.msg
    NpcGhostInfo.msg
+   VehicleCollisionData.msg
+   VehicleCollision.msg
+   SyncModeAddObj.msg
+   SyncModeInfo.msg
+   WaitForTickResponse.msg
+   SyncModeCmd.msg   
+   SyncModeRemoveObj.msg
+   SyncModeCmdResponse.msg  
+   WaitForTick.msg
  )
 
  add_service_files(
    DIRECTORY srv
    FILES
    MoraiScenarioLoadSrv.srv
-   MoraiSimProcSrv.srv
+   MoraiSimpProcSrv.srv
    MoraiTLInfoSrv.srv
-   MoraiVehicleSpecSrv.srv
    MoraiEventCmdSrv.srv
+   MoraiVehicleSpecSrv.srv
+   MoraiSyncModeCmdSrv.srv
+   MoraiWaitForTickSrv.srv
  )
-
 
  generate_messages(
    DEPENDENCIES
@@ -81,7 +72,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 catkin_package(
   CATKIN_DEPENDS 
-  std_msgs 
+  std_msgs
   geometry_msgs
   message_runtime
 )

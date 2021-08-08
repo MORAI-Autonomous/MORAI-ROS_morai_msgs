@@ -1,4 +1,3 @@
-uint8 sim_process_mode
 uint8 sim_process_status
 
 int16 replay_option

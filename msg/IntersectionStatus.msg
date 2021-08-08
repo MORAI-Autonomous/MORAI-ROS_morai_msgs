@@ -1,8 +1,4 @@
 Header header
-string intersection_index
+int32 intersection_index
 int16 intersection_status
 float32 intersection_status_time
-
-string traffic_light_index
-int16 traffic_light_status
-int16 traffic_light_next_status

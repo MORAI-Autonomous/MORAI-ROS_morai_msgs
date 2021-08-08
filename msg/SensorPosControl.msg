@@ -1,5 +1,3 @@
-string[] sensor_type
-
 int16[] sensor_index
 
 float32[] pose_x
