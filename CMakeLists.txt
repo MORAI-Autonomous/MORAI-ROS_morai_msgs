@@ -50,6 +50,8 @@ find_package(catkin REQUIRED COMPONENTS
    SyncModeRemoveObj.msg
    SyncModeCmdResponse.msg  
    WaitForTick.msg
+   MapSpec.msg
+   MapSpecIndex.msg
  )
 
  add_service_files(
@@ -62,6 +64,7 @@ find_package(catkin REQUIRED COMPONENTS
    MoraiVehicleSpecSrv.srv
    MoraiSyncModeCmdSrv.srv
    MoraiWaitForTickSrv.srv
+   MoraiMapSpecSrv.srv
  )
 
  generate_messages(
