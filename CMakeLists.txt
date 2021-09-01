@@ -55,6 +55,7 @@ find_package(catkin REQUIRED COMPONENTS
    SyncModeCtrlCmd.msg
    SyncModeSetGear.msg
    SyncModeResultResponse.msg
+   SyncModeScenarioLoad.msg
  )
 
  add_service_files(
@@ -70,6 +71,7 @@ find_package(catkin REQUIRED COMPONENTS
    MoraiMapSpecSrv.srv
    MoraiSyncModeCtrlCmdSrv.srv
    MoraiSyncModeSetGearSrv.srv
+   MoraiSyncModeSLSrv.srv
  )
 
  generate_messages(
