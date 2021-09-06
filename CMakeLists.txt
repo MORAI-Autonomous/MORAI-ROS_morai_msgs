@@ -56,6 +56,8 @@ find_package(catkin REQUIRED COMPONENTS
    SyncModeSetGear.msg
    SyncModeResultResponse.msg
    SyncModeScenarioLoad.msg
+   RadarTrack.msg
+   RadarTracks.msg
  )
 
  add_service_files(
