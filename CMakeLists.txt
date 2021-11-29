@@ -58,6 +58,9 @@ find_package(catkin REQUIRED COMPONENTS
    SyncModeScenarioLoad.msg
    RadarTrack.msg
    RadarTracks.msg
+   PRStatus.msg
+   PRCtrlCmd.msg
+   PREvent.msg
  )
 
  add_service_files(
@@ -74,6 +77,7 @@ find_package(catkin REQUIRED COMPONENTS
    MoraiSyncModeCtrlCmdSrv.srv
    MoraiSyncModeSetGearSrv.srv
    MoraiSyncModeSLSrv.srv
+   PREventSrv.srv
  )
 
  generate_messages(
