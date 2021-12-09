@@ -67,7 +67,7 @@ find_package(catkin REQUIRED COMPONENTS
    DIRECTORY srv
    FILES
    MoraiScenarioLoadSrv.srv
-   MoraiSimpProcSrv.srv
+   MoraiSimProcSrv.srv
    MoraiTLInfoSrv.srv
    MoraiEventCmdSrv.srv
    MoraiVehicleSpecSrv.srv
