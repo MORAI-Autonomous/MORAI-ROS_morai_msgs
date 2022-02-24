@@ -1,0 +1,9 @@
+Header header
+int32 unique_id
+geometry_msgs/Vector3 acceleration
+geometry_msgs/Vector3 position
+geometry_msgs/Vector3 velocity
+
+float64 heading
+float64 left_wheel_speed
+float64 right_wheel_speed
