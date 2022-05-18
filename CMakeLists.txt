@@ -56,6 +56,8 @@ find_package(catkin REQUIRED COMPONENTS
    SyncModeSetGear.msg
    SyncModeResultResponse.msg
    SyncModeScenarioLoad.msg
+   RadarDetection.msg
+   RadarDetections.msg
    RadarTrack.msg
    RadarTracks.msg
    PRStatus.msg
