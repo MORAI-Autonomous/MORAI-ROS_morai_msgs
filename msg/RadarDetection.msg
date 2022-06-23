@@ -4,10 +4,10 @@
 
 # Object classifications (Additional vendor-specific classifications are permitted starting from 32000 eg. Car)
 
-uint16 detection_id                       # An optional classification of the object (see above)
-geometry_msgs/Point position                # x, y, z coordinates of the centroid of the object being tracked.
+uint16 detection_id                       # Index of each radar detection point
+geometry_msgs/Point position              # x, y, z position of each radar detection point
 
-float32 azimuth
-float32 rangerate
-float32 amplitude
+float32 azimuth							  # azimuth angle of each radar detection point in Degree
+float32 rangerate						  # relative velocity of the radar detected target w.r.t radial direction
+float32 amplitude						  # amplitude of the reflected signal of the radar detected target(rcs)
 

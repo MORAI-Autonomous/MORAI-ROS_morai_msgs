@@ -58,8 +58,6 @@ find_package(catkin REQUIRED COMPONENTS
    SyncModeScenarioLoad.msg
    RadarDetection.msg
    RadarDetections.msg
-   RadarTrack.msg
-   RadarTracks.msg
    PRStatus.msg
    PRCtrlCmd.msg
    PREvent.msg
