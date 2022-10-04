@@ -43,11 +43,11 @@ find_package(catkin REQUIRED COMPONENTS
    NpcGhostInfo.msg
    VehicleCollisionData.msg
    VehicleCollision.msg
-   SyncModeAddObj.msg
+   SyncModeAddObject.msg
    SyncModeInfo.msg
    WaitForTickResponse.msg
    SyncModeCmd.msg   
-   SyncModeRemoveObj.msg
+   SyncModeRemoveObject.msg
    SyncModeCmdResponse.msg  
    WaitForTick.msg
    MapSpec.msg
@@ -78,6 +78,8 @@ find_package(catkin REQUIRED COMPONENTS
    MoraiSyncModeSetGearSrv.srv
    MoraiSyncModeSLSrv.srv
    PREventSrv.srv
+   MoraiSyncModeAddObjectSrv.srv
+   MoraiSyncModeRemoveObjectSrv.srv
  )
 
  generate_messages(
