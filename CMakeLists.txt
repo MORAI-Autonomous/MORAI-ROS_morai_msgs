@@ -13,10 +13,13 @@ find_package(catkin REQUIRED COMPONENTS
    FILES
    CtrlCmd.msg
    EgoVehicleStatus.msg
+   EgoVehicleStatusExtended.msg
    GPSMessage.msg
    GhostMessage.msg
    ObjectStatusList.msg
    ObjectStatus.msg
+   ObjectStatusExtended.msg
+   ObjectStatusListExtended.msg
    TrafficLight.msg
    ERP42Info.msg
    GetTrafficLightStatus.msg
