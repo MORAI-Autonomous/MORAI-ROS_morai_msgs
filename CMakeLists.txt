@@ -64,6 +64,8 @@ find_package(catkin REQUIRED COMPONENTS
    PRStatus.msg
    PRCtrlCmd.msg
    PREvent.msg
+   Weather.msg
+   EnviroTime.msg
  )
 
  add_service_files(
@@ -83,6 +85,8 @@ find_package(catkin REQUIRED COMPONENTS
    PREventSrv.srv
    MoraiSyncModeAddObjectSrv.srv
    MoraiSyncModeRemoveObjectSrv.srv
+   MoraiWeatherSrv.srv
+   MoraiEnviroTimeSrv.srv
  )
 
  generate_messages(
