@@ -65,6 +65,8 @@ find_package(catkin REQUIRED COMPONENTS
    PRCtrlCmd.msg
    PREvent.msg
    SkateboardCtrlCmd.msg
+   EgoRotemStatus.msg
+   RotemCtrlCmd.msg
  )
 
  add_service_files(
