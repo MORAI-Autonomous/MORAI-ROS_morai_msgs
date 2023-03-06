@@ -1,0 +1,8 @@
+int32 rear_steering_cmd_type
+float32 accel
+float32 brake
+float32 steering
+float32 steering_rear
+float32 steering_rear_ratio
+float32 steering_zero_turn
+

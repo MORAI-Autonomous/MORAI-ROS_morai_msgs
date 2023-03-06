@@ -1,0 +1,11 @@
+Header header
+int32 unique_id
+int32 ctrl_mode
+
+geometry_msgs/Vector3 acceleration
+geometry_msgs/Vector3 position
+geometry_msgs/Vector3 linear_velocity
+geometry_msgs/Vector3 angular_velocity
+float32 heading
+
+int32 rear_steering_cmd_type
