@@ -8,3 +8,4 @@ float64 heading
 float32 accel
 float32 brake
 float32 wheel_angle
+float32 lateral_offset
