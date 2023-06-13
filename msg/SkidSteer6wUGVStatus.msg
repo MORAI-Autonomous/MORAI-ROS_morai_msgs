@@ -17,3 +17,4 @@ float32 left_rear_wheel_rpm
 float32 right_front_wheel_rpm
 float32 right_middle_wheel_rpm
 float32 right_rear_wheel_rpm
+float32 lateral_offset
