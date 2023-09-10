@@ -66,6 +66,8 @@ find_package(catkin REQUIRED COMPONENTS
    PREvent.msg
    SkateboardCtrlCmd.msg
    SkateboardStatus.msg
+   SkidSteer6wUGVCtrlCmd.msg
+   SkidSteer6wUGVStatus.msg
  )
 
  add_service_files(
