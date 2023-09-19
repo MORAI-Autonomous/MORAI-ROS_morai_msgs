@@ -70,6 +70,9 @@ find_package(catkin REQUIRED COMPONENTS
    SkidSteer6wUGVStatus.msg
    MultiPlayEventResponse.msg
    MultiPlayEventRequest.msg
+   DillyCmdResponse.msg
+   DillyCmd.msg
+   WoowaDillyStatus.msg
  )
 
  add_service_files(
@@ -90,6 +93,7 @@ find_package(catkin REQUIRED COMPONENTS
    MoraiSyncModeAddObjectSrv.srv
    MoraiSyncModeRemoveObjectSrv.srv
    MultiPlayEventSrv.srv
+   WoowaDillyEventCmdSrv.srv
  )
 
  generate_messages(
