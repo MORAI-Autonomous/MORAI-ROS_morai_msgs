@@ -73,6 +73,7 @@ find_package(catkin REQUIRED COMPONENTS
    DillyCmdResponse.msg
    DillyCmd.msg
    WoowaDillyStatus.msg
+   SVADC.msg
  )
 
  add_service_files(

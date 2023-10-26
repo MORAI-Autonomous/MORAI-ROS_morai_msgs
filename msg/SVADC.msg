@@ -1,0 +1,4 @@
+Header header
+int32 collisionCount
+int32 signalViolationCount
+int32 speedLimitCount
