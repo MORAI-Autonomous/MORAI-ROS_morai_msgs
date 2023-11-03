@@ -74,6 +74,14 @@ find_package(catkin REQUIRED COMPONENTS
    DillyCmd.msg
    WoowaDillyStatus.msg
    SVADC.msg
+   FaultInjection_Controller.msg
+   FaultInjection_Response.msg
+   FaultInjection_Sensor.msg
+   FaultInjection_Tire.msg
+   FaultStatusInfo_Overall.msg
+   FaultStatusInfo_Sensor.msg
+   FaultStatusInfo_Vehicle.msg
+   FaultStatusInfo.msg
  )
 
  add_service_files(
@@ -95,6 +103,9 @@ find_package(catkin REQUIRED COMPONENTS
    MoraiSyncModeRemoveObjectSrv.srv
    MultiPlayEventSrv.srv
    WoowaDillyEventCmdSrv.srv
+   FaultInjectionCtrlSrv.srv
+   FaultInjectionSensorSrv.srv
+   FaultInjectionTireSrv.srv
  )
 
  generate_messages(
