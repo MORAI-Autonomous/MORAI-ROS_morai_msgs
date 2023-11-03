@@ -5,3 +5,7 @@ float64 global_offset_y
 float64 global_offset_z
 
 ObjectStatus[] collision_object
+
+ObjectStatus[] collision_objecta
+
+

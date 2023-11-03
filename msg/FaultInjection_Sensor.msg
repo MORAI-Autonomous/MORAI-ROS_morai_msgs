@@ -1,0 +1,8 @@
+int32 unique_id
+int32 sensor_id
+
+int32 fault_class
+int32 fault_subclass
+
+geometry_msgs/Vector3 local_position_offset
+geometry_msgs/Vector3 local_rotation_offset
