@@ -82,6 +82,10 @@ find_package(catkin REQUIRED COMPONENTS
    FaultStatusInfo_Sensor.msg
    FaultStatusInfo_Vehicle.msg
    FaultStatusInfo.msg
+   VelocityCmd.msg
+   Obstacle.msg
+   Obstacles.msg
+   Transforms.msg
  )
 
  add_service_files(
