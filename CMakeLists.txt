@@ -87,6 +87,7 @@ find_package(catkin REQUIRED COMPONENTS
    Obstacles.msg
    Transforms.msg
    GVDirectCmd.msg
+   GVStateCmd.msg
  )
 
  add_service_files(
