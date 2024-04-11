@@ -88,6 +88,7 @@ find_package(catkin REQUIRED COMPONENTS
    Transforms.msg
    GVDirectCmd.msg
    GVStateCmd.msg
+   RobotControl.msg
  )
 
  add_service_files(
