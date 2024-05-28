@@ -87,10 +87,10 @@ find_package(catkin REQUIRED COMPONENTS
    Obstacles.msg
    Transforms.msg
    GVDirectCmd.msg
-   GVStateCmd.msg
-   RobotControl.msg
-   RobotOutput.msg
+   GVStateCmd.msg      
    TOF.msg
+   RobotOutput.msg
+   WheelControl.msg
  )
 
  add_service_files(
