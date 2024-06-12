@@ -1,0 +1,2 @@
+int32 robot_state
+int32 error_state

@@ -91,6 +91,9 @@ find_package(catkin REQUIRED COMPONENTS
    TOF.msg
    RobotOutput.msg
    WheelControl.msg
+   RobotState.msg
+   Conveyor.msg
+   CMDConveyor.msg
  )
 
  add_service_files(

@@ -1,0 +1,3 @@
+bool position_sensor
+bool palette_sensor1
+bool palette_sensor2
