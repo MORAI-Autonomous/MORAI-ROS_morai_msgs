@@ -94,6 +94,7 @@ find_package(catkin REQUIRED COMPONENTS
    RobotState.msg
    Conveyor.msg
    CMDConveyor.msg
+   ExternalForce.msg
  )
 
  add_service_files(
