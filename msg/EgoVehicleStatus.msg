@@ -10,6 +10,10 @@ float32 brake
 float32 wheel_angle
 float32 lateral_offset
 
+float32 wheel_speed_fl
+float32 wheel_speed_fr
+float32 wheel_speed_rl
+float32 wheel_speed_rr
 float32 tire_lateral_force_fl
 float32 tire_lateral_force_fr
 float32 tire_lateral_force_rl
