@@ -95,6 +95,10 @@ find_package(catkin REQUIRED COMPONENTS
    Conveyor.msg
    CMDConveyor.msg
    ExternalForce.msg
+   GeoVector3Message.msg
+   ShipState.msg
+   ShipCtrlCmd.msg
+   ManipulatorControl.msg
  )
 
  add_service_files(
