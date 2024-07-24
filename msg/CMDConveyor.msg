@@ -1,3 +1,2 @@
-bool position_sensor
-bool palette_sensor1
-bool palette_sensor2
+int32 straight_reverse
+int32 left_right

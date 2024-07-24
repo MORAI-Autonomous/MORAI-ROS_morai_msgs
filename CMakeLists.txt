@@ -92,7 +92,7 @@ find_package(catkin REQUIRED COMPONENTS
    RobotOutput.msg
    WheelControl.msg
    RobotState.msg
-   Conveyor.msg
+   ConveyorState.msg
    CMDConveyor.msg
    ExternalForce.msg
    GeoVector3Message.msg

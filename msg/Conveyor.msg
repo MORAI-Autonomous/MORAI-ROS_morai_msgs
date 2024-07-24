@@ -1,2 +1,0 @@
-int32 straight_reverse
-int32 left_right
