@@ -1,4 +1,0 @@
-bool position_sensor
-bool palette_sensor1
-bool palette_sensor2
-int32 limit_sensor
