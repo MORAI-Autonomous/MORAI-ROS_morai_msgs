@@ -1,0 +1,2 @@
+float32 thrust
+float32 rudder

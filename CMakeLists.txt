@@ -83,6 +83,23 @@ find_package(catkin REQUIRED COMPONENTS
    FaultStatusInfo_Vehicle.msg
    FaultStatusInfo.msg
    UGVServeSkidCtrlCmd.msg
+   VelocityCmd.msg
+   Obstacle.msg
+   Obstacles.msg
+   Transforms.msg
+   GVDirectCmd.msg
+   GVStateCmd.msg      
+   TOF.msg
+   RobotOutput.msg
+   WheelControl.msg
+   RobotState.msg
+   Conveyor.msg
+   CMDConveyor.msg
+   ExternalForce.msg
+   GeoVector3Message.msg
+   ShipState.msg
+   ShipCtrlCmd.msg
+   ManipulatorControl.msg
  )
 
  add_service_files(

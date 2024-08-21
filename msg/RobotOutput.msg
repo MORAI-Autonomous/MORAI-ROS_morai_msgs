@@ -1,0 +1,13 @@
+int32 drive_mode
+bool safe_mode_en
+bool is_obstacle
+int32 is_enabled
+bool is_collision
+bool is_emg_stop
+bool is_protect_stop
+bool is_brake
+bool is_speed_limit_on_safe_mode
+bool is_muting
+bool attach_exist
+int32 attach_mode
+bool is_attach_sig
