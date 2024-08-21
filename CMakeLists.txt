@@ -100,6 +100,7 @@ find_package(catkin REQUIRED COMPONENTS
    ShipState.msg
    ShipCtrlCmd.msg
    ManipulatorControl.msg
+   AttachmentDeviceState.msg
  )
 
  add_service_files(
