@@ -82,6 +82,7 @@ find_package(catkin REQUIRED COMPONENTS
    FaultStatusInfo_Sensor.msg
    FaultStatusInfo_Vehicle.msg
    FaultStatusInfo.msg
+   UGVServeSkidCtrlCmd.msg
    VelocityCmd.msg
    Obstacle.msg
    Obstacles.msg
