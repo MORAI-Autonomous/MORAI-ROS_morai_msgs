@@ -1,0 +1,4 @@
+int32 latCtrlType
+float32 targetLongitudinalVelocity
+float32 targetAngularVelocity
+float32[10] targetSteerAngle
