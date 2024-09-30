@@ -9,3 +9,7 @@ float32 accel
 float32 brake
 float32 wheel_angle
 float32 wheel_angle_rear
+float32 wheel_speed_fl
+float32 wheel_speed_fr
+float32 wheel_speed_rl
+float32 wheel_speed_rr
