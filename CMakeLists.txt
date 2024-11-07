@@ -103,6 +103,7 @@ find_package(catkin REQUIRED COMPONENTS
    AttachmentDeviceState.msg
    GripperState.msg
    RobotPose.msg
+   MSITCustomMessage.msg
  )
 
  add_service_files(
