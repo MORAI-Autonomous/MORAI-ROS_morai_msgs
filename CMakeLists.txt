@@ -102,6 +102,7 @@ find_package(catkin REQUIRED COMPONENTS
    ManipulatorControl.msg
    AttachmentDeviceState.msg
    GripperState.msg
+   RobotPose.msg
  )
 
  add_service_files(
