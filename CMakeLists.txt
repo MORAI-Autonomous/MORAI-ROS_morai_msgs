@@ -104,6 +104,10 @@ find_package(catkin REQUIRED COMPONENTS
    GripperState.msg
    RobotPose.msg
    MSITCustomMessage.msg
+   EgoNoisyStatus.msg
+   ENU.msg
+   RPY.msg
+   XYZ.msg
  )
 
  add_service_files(
