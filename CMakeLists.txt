@@ -108,6 +108,7 @@ find_package(catkin REQUIRED COMPONENTS
    ENU.msg
    RPY.msg
    XYZ.msg
+   EgoDetailStatus.msg
  )
 
  add_service_files(
