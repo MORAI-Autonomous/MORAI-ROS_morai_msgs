@@ -100,6 +100,15 @@ find_package(catkin REQUIRED COMPONENTS
    ShipState.msg
    ShipCtrlCmd.msg
    ManipulatorControl.msg
+   AttachmentDeviceState.msg
+   GripperState.msg
+   RobotPose.msg
+   MSITCustomMessage.msg
+   EgoNoisyStatus.msg
+   ENU.msg
+   RPY.msg
+   XYZ.msg
+   EgoDetailStatus.msg
  )
 
  add_service_files(

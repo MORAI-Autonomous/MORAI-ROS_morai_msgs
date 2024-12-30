@@ -1,0 +1,2 @@
+bool release_limit
+bool grip_limit
