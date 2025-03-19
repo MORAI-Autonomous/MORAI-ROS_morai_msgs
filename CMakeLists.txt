@@ -109,6 +109,7 @@ find_package(catkin REQUIRED COMPONENTS
    RPY.msg
    XYZ.msg
    EgoDetailStatus.msg
+   Competition.msg
  )
 
  add_service_files(
