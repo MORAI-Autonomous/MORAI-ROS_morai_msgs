@@ -11,3 +11,4 @@ bool is_muting
 bool attach_exist
 int32 attach_mode
 bool is_attach_sig
+bool is_active_manipulator_brake
