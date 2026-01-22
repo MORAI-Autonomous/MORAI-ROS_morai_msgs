@@ -7,7 +7,8 @@ geometry_msgs/Vector3 velocity
 float64 heading
 float32 accel
 float32 brake
-float32 wheel_angle
+float32 front_steer_angle
+float32 rear_steer_angle
 float32 lateral_offset
 
 float32 tire_lateral_force_fl
@@ -24,3 +25,7 @@ float32 tire_cornering_stiffness_fl
 float32 tire_cornering_stiffness_fr
 float32 tire_cornering_stiffness_rl
 float32 tire_cornering_stiffness_rr
+
+flaot32 distance_left_lane_boundary
+flaot32 distance_right_lane_boundary
+flaot32 cross_track_error
