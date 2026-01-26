@@ -26,6 +26,6 @@ float32 tire_cornering_stiffness_fr
 float32 tire_cornering_stiffness_rl
 float32 tire_cornering_stiffness_rr
 
-flaot32 distance_left_lane_boundary
-flaot32 distance_right_lane_boundary
-flaot32 cross_track_error
+float32 distance_left_lane_boundary
+float32 distance_right_lane_boundary
+float32 cross_track_error
