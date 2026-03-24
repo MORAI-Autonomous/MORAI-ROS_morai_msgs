@@ -1,10 +1,13 @@
-int32 unique_id
-string name
+# NpcGhostInfo
+# Information for a single NPC vehicle in ghost mode.
 
-geometry_msgs/Vector3 position
-geometry_msgs/Vector3 rpy
+int32 unique_id  # NPC identifier
+string name  # Model name (e.g., 2016_Kia_Niro(HEV))
 
-float32 steering_angle      # 조향 각도 ( degree )
-float32 vehicle_speed       # 차량 속력 ( km/h )
-uint32 turn_signal            # 방향지시등 ( 0: off, 1: left, 2: right, 3: hazard )
-bool brake_light            # 브레이크등 ( 켜짐/꺼짐 )
+geometry_msgs/Vector3 position  # Position in ENU coordinates [m]
+geometry_msgs/Vector3 rpy  # Roll, Pitch, Yaw [deg]
+
+float32 steering_angle  # Steering angle [deg]
+float32 vehicle_speed  # Vehicle speed [km/h]
+uint32 turn_signal  # Turn signal (0: off, 1: left, 2: right, 3: hazard)
+bool brake_light  # Brake light (false: off, true: on)

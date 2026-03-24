@@ -1,6 +1,9 @@
-bool tick_status
-bool pause_status
-uint64 frame
+# WaitForTickResponse
+# Response after a simulation tick completes in synchronous mode.
 
-EgoVehicleStatus vehicle_status
-string time
+bool tick_status  # Tick completion status
+bool pause_status  # Simulation pause status
+uint64 frame  # Current frame number
+
+EgoVehicleStatus vehicle_status  # Ego vehicle state after tick
+string time  # Simulation timestamp

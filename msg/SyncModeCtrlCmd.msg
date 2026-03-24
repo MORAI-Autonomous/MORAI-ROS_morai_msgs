@@ -1,5 +1,8 @@
-uint64 frame
+# SyncModeCtrlCmd
+# Vehicle control command for synchronous simulation mode.
 
-CtrlCmd command
+uint64 frame  # Frame counter
 
-bool sensor_capture
+CtrlCmd command  # Vehicle control command
+
+bool sensor_capture  # true: capture sensor data this frame
