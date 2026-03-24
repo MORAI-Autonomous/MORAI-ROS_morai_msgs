@@ -1,0 +1,203 @@
+site_name: MORAI ROS1 Messages Documentation
+site_description: Documentation for MORAI ROS1 message and service definitions
+site_author: MORAI
+repo_url: https://github.com/MORAI-Autonomous/MORAI-ROS_morai_msgs
+repo_name: MORAI-ROS_morai_msgs
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search
+  - tags
+  - mike
+
+exclude_docs: |
+  generate_docs.py
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Messages:
+    - Overview: messages/index.md
+    - Control:
+      - CtrlCmd: messages/CtrlCmd.md
+      - GVDirectCmd: messages/GVDirectCmd.md
+      - GVStateCmd: messages/GVStateCmd.md
+      - VelocityCmd: messages/VelocityCmd.md
+      - WheelControl: messages/WheelControl.md
+    - Vehicle Status:
+      - EgoVehicleStatus: messages/EgoVehicleStatus.md
+      - EgoVehicleStatusExtended: messages/EgoVehicleStatusExtended.md
+      - EgoDdVehicleStatus: messages/EgoDdVehicleStatus.md
+      - VehicleSpec: messages/VehicleSpec.md
+      - VehicleSpecIndex: messages/VehicleSpecIndex.md
+      - Lamps: messages/Lamps.md
+      - ERP42Info: messages/ERP42Info.md
+    - Collision & Safety:
+      - CollisionData: messages/CollisionData.md
+      - VehicleCollision: messages/VehicleCollision.md
+      - VehicleCollisionData: messages/VehicleCollisionData.md
+      - SVADC: messages/SVADC.md
+    - Traffic & Infrastructure:
+      - GetTrafficLightStatus: messages/GetTrafficLightStatus.md
+      - SetTrafficLight: messages/SetTrafficLight.md
+      - TrafficLight: messages/TrafficLight.md
+      - MoraiTLInfo: messages/MoraiTLInfo.md
+      - MoraiTLIndex: messages/MoraiTLIndex.md
+      - IntersectionControl: messages/IntersectionControl.md
+      - IntersectionStatus: messages/IntersectionStatus.md
+      - IntscnTL: messages/IntscnTL.md
+    - Perception & Sensors:
+      - ObjectStatus: messages/ObjectStatus.md
+      - ObjectStatusList: messages/ObjectStatusList.md
+      - ObjectStatusExtended: messages/ObjectStatusExtended.md
+      - ObjectStatusListExtended: messages/ObjectStatusListExtended.md
+      - RadarDetection: messages/RadarDetection.md
+      - RadarDetections: messages/RadarDetections.md
+      - GPSMessage: messages/GPSMessage.md
+      - SensorPosControl: messages/SensorPosControl.md
+      - TOF: messages/TOF.md
+      - Obstacle: messages/Obstacle.md
+      - Obstacles: messages/Obstacles.md
+      - Transforms: messages/Transforms.md
+    - Simulation Control:
+      - MoraiSimProcHandle: messages/MoraiSimProcHandle.md
+      - MoraiSimProcStatus: messages/MoraiSimProcStatus.md
+      - MoraiSrvResponse: messages/MoraiSrvResponse.md
+      - ScenarioLoad: messages/ScenarioLoad.md
+      - EventInfo: messages/EventInfo.md
+      - ReplayInfo: messages/ReplayInfo.md
+      - SaveSensorData: messages/SaveSensorData.md
+      - MultiEgoSetting: messages/MultiEgoSetting.md
+      - ExternalForce: messages/ExternalForce.md
+    - Ghost & NPC:
+      - GhostMessage: messages/GhostMessage.md
+      - NpcGhostCmd: messages/NpcGhostCmd.md
+      - NpcGhostInfo: messages/NpcGhostInfo.md
+    - Map:
+      - MapSpec: messages/MapSpec.md
+      - MapSpecIndex: messages/MapSpecIndex.md
+    - Sync Mode:
+      - SyncModeCmd: messages/SyncModeCmd.md
+      - SyncModeCmdResponse: messages/SyncModeCmdResponse.md
+      - SyncModeCtrlCmd: messages/SyncModeCtrlCmd.md
+      - SyncModeInfo: messages/SyncModeInfo.md
+      - SyncModeAddObject: messages/SyncModeAddObject.md
+      - SyncModeRemoveObject: messages/SyncModeRemoveObject.md
+      - SyncModeResultResponse: messages/SyncModeResultResponse.md
+      - SyncModeScenarioLoad: messages/SyncModeScenarioLoad.md
+      - SyncModeSetGear: messages/SyncModeSetGear.md
+      - WaitForTick: messages/WaitForTick.md
+      - WaitForTickResponse: messages/WaitForTickResponse.md
+    - Fault Injection:
+      - FaultInjection_Controller: messages/FaultInjection_Controller.md
+      - FaultInjection_Response: messages/FaultInjection_Response.md
+      - FaultInjection_Sensor: messages/FaultInjection_Sensor.md
+      - FaultInjection_Tire: messages/FaultInjection_Tire.md
+      - FaultStatusInfo: messages/FaultStatusInfo.md
+      - FaultStatusInfo_Overall: messages/FaultStatusInfo_Overall.md
+      - FaultStatusInfo_Sensor: messages/FaultStatusInfo_Sensor.md
+      - FaultStatusInfo_Vehicle: messages/FaultStatusInfo_Vehicle.md
+    - Specialized Vehicles:
+      - SkateboardCtrlCmd: messages/SkateboardCtrlCmd.md
+      - SkateboardStatus: messages/SkateboardStatus.md
+      - DdCtrlCmd: messages/DdCtrlCmd.md
+      - SkidSteer6wUGVCtrlCmd: messages/SkidSteer6wUGVCtrlCmd.md
+      - SkidSteer6wUGVStatus: messages/SkidSteer6wUGVStatus.md
+      - UGVServeSkidCtrlCmd: messages/UGVServeSkidCtrlCmd.md
+      - ShipCtrlCmd: messages/ShipCtrlCmd.md
+      - ShipState: messages/ShipState.md
+      - PRCtrlCmd: messages/PRCtrlCmd.md
+      - PRStatus: messages/PRStatus.md
+      - PREvent: messages/PREvent.md
+    - Robot & Delivery:
+      - DillyCmd: messages/DillyCmd.md
+      - DillyCmdResponse: messages/DillyCmdResponse.md
+      - WoowaDillyStatus: messages/WoowaDillyStatus.md
+      - ManipulatorControl: messages/ManipulatorControl.md
+      - RobotOutput: messages/RobotOutput.md
+      - RobotState: messages/RobotState.md
+      - Conveyor: messages/Conveyor.md
+      - CMDConveyor: messages/CMDConveyor.md
+    - Multi-Play:
+      - MultiPlayEventRequest: messages/MultiPlayEventRequest.md
+      - MultiPlayEventResponse: messages/MultiPlayEventResponse.md
+    - Utility:
+      - GeoVector3Message: messages/GeoVector3Message.md
+  - Services:
+    - Overview: services/index.md
+    - Simulation:
+      - MoraiScenarioLoadSrv: services/MoraiScenarioLoadSrv.md
+      - MoraiSimProcSrv: services/MoraiSimProcSrv.md
+      - MoraiEventCmdSrv: services/MoraiEventCmdSrv.md
+    - Traffic:
+      - MoraiTLInfoSrv: services/MoraiTLInfoSrv.md
+    - Vehicle:
+      - MoraiVehicleSpecSrv: services/MoraiVehicleSpecSrv.md
+    - Map:
+      - MoraiMapSpecSrv: services/MoraiMapSpecSrv.md
+    - Sync Mode:
+      - MoraiSyncModeCmdSrv: services/MoraiSyncModeCmdSrv.md
+      - MoraiWaitForTickSrv: services/MoraiWaitForTickSrv.md
+      - MoraiSyncModeCtrlCmdSrv: services/MoraiSyncModeCtrlCmdSrv.md
+      - MoraiSyncModeSetGearSrv: services/MoraiSyncModeSetGearSrv.md
+      - MoraiSyncModeSLSrv: services/MoraiSyncModeSLSrv.md
+      - MoraiSyncModeAddObjectSrv: services/MoraiSyncModeAddObjectSrv.md
+      - MoraiSyncModeRemoveObjectSrv: services/MoraiSyncModeRemoveObjectSrv.md
+    - Fault Injection:
+      - FaultInjectionCtrlSrv: services/FaultInjectionCtrlSrv.md
+      - FaultInjectionSensorSrv: services/FaultInjectionSensorSrv.md
+      - FaultInjectionTireSrv: services/FaultInjectionTireSrv.md
+    - Specialized:
+      - PREventSrv: services/PREventSrv.md
+      - MultiPlayEventSrv: services/MultiPlayEventSrv.md
+      - WoowaDillyEventCmdSrv: services/WoowaDillyEventCmdSrv.md
+
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MORAI-Autonomous

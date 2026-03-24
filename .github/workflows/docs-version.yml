@@ -1,0 +1,60 @@
+name: Deploy Versioned Documentation
+
+on:
+  workflow_dispatch:
+    inputs:
+      version_tag:
+        description: "Git tag to deploy (e.g., 24.r2, 26.r1)"
+        required: true
+        type: string
+      set_latest:
+        description: "Set this version as the latest alias"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.version_tag }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material pymdown-extensions mike
+
+      - name: Configure git for mike
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Ensure docs infrastructure exists
+        run: |
+          # For older tags that predate the docs setup, fetch docs files from master
+          if [ ! -f mkdocs.yml ]; then
+            git fetch origin master
+            git checkout origin/master -- mkdocs.yml docs/generate_docs.py docs/index.md docs/messages/index.md docs/services/index.md docs-requirements.txt
+          fi
+
+      - name: Generate documentation pages
+        run: python docs/generate_docs.py
+
+      - name: Deploy version with mike
+        run: |
+          if [ "${{ inputs.set_latest }}" = "true" ]; then
+            mike deploy --push --update-aliases ${{ inputs.version_tag }} latest
+            mike set-default --push latest
+          else
+            mike deploy --push ${{ inputs.version_tag }}
+          fi

@@ -1,0 +1,47 @@
+name: Deploy Documentation
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material pymdown-extensions mike
+
+      - name: Configure git for mike
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Generate documentation pages
+        run: python docs/generate_docs.py
+
+      - name: Deploy with mike
+        run: |
+          mike deploy --push --update-aliases dev latest
+          mike set-default --push latest

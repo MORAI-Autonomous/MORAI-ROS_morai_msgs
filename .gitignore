@@ -1,6 +1,12 @@
 # MkDocs build output
 site/
 
+# Generated documentation (rebuilt by docs/generate_docs.py)
+docs/messages/*.md
+!docs/messages/index.md
+docs/services/*.md
+!docs/services/index.md
+
 # Python cache
 __pycache__/
 *.py[cod]
