@@ -1,0 +1,5 @@
+# Documentation dependencies
+mkdocs>=1.5.0
+mkdocs-material>=9.5.0
+pymdown-extensions>=10.7.0
+mike>=2.0.0
