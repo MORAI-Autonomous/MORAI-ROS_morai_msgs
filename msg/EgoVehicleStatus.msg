@@ -33,3 +33,5 @@ float32 tire_cornering_stiffness_rr  # Rear-right cornering stiffness
 float32 distance_left_lane_boundary  # Distance from left lane boundary [m]
 float32 distance_right_lane_boundary  # Distance from right lane boundary [m]
 float32 cross_track_error  # Distance from lane center, right-positive [m]
+
+int32 ctrl_mode  # Current control mode status echo value (1: Keyboard, 2: Gamepad, 3: External, 4: Auto)
