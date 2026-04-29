@@ -5068,7 +5068,7 @@
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a># Service: /Service_MoraiEventCmd (request/response)
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>int8 option  # Bitmask for fields to apply (0x0001: ctrl_mode, 0x0010: gear, 0x0100: lamps, 0x1000: set_pause)
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>int32 ctrl_mode  # Control mode (1: Keyboard, 2: Gamepad, 3: External, 4: Auto)
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>int32 ctrl_mode  # Control mode (1: Keyboard, 2: Gamepad, 3: External, 6: Auto agent controlled)
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>int32 gear  # Gear selection (-1: No change, 1: Parking, 2: Reverse, 3: Neutral, 4: Drive)
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>Lamps lamps  # Vehicle lamp controls
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>bool set_pause  # true: pause simulation, false: continue
@@ -5091,7 +5091,7 @@
 <tr>
 <td><code>ctrl_mode</code></td>
 <td><code>int32</code></td>
-<td>Control mode (1: Keyboard, 2: Gamepad, 3: External, 4: Auto)</td>
+<td>Control mode (1: Keyboard, 2: Gamepad, 3: External, 6: Auto agent controlled)</td>
 </tr>
 <tr>
 <td><code>gear</code></td>
