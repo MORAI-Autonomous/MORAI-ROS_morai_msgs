@@ -7,6 +7,7 @@ int32 unique_id  # Object unique id
 geometry_msgs/Vector3 acceleration  # Acceleration vector [m/s^2]
 geometry_msgs/Vector3 position  # Current position in ENU coordinates [m]
 geometry_msgs/Vector3 velocity  # Velocity vector [m/s]
+geometry_msgs/Vector3 angular_velocity  # [deg/s] 
 
 float64 heading  # Vehicle heading [deg]
 float32 accel  # Accelerator pedal, range 0~1
